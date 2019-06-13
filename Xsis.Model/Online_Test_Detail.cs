@@ -12,29 +12,33 @@ namespace Xsis.Model
     [Table("x_online_test_detail")]
     public class Online_Test_Detail
     {
-        // ID AUTO INCREAMENT PRIMARY KEY
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        [Required(AllowEmptyStrings = false)]
         public long id { get; set; }
 
         [Required(AllowEmptyStrings = false)]
         public long created_by { get; set; }
 
-        [Required(AllowEmptyStrings = false)]
         [Column(TypeName = "Date")]
-        public DateTime create_on { get; set; }
-        public long modified_by { get; set; }
+        [Required(AllowEmptyStrings = false)]
+        public DateTime created_on { get; set; }
+
+        public Nullable<long> modified_by { get; set; }
 
         [Column(TypeName = "Date")]
-        public DateTime modified_on { get; set; }
-        public long delete_by { get; set; }
+        public Nullable<DateTime> modified_on { get; set; }
+
+        public Nullable<long> deleted_by { get; set; }
+
         [Column(TypeName = "Date")]
-        public DateTime delete_on { get; set; }
-        [Required(AllowEmptyStrings = false)]
+        public Nullable<DateTime> deleted_on { get; set; }
+
         public Boolean is_delete { get; set; }
-        public long online_test_id { get; set; }
-        public long test_type_id { get; set; }
-        public int test_order { get; set; }
+
+        public Nullable<long> online_test_id { get; set; }
+
+        public Nullable<long> test_type_id { get; set; }
+
+        public Nullable<int> test_order { get; set; }
     }
 }

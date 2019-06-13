@@ -13,30 +13,27 @@ namespace Xsis.Model
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        [Required(AllowEmptyStrings = false)]
-        public long biodata_attachment_id { get; set; }
+        public long id { get; set; }
 
         [Required(AllowEmptyStrings = false)]
         public long created_by { get; set; }
 
+        [Column(TypeName = "Date")]
         [Required(AllowEmptyStrings = false)]
-        [Column(TypeName = "Date")]
-        public DateTime create_on { get; set; }
+        public DateTime created_on { get; set; }
 
-        public long modified_by { get; set; }
-
-        [Column(TypeName = "Date")]
-        public DateTime modified_on { get; set; }
-
-        public long delete_by { get; set; }
+        public Nullable<long> modified_by { get; set; }
 
         [Column(TypeName = "Date")]
-        public DateTime delete_on { get; set; }
+        public Nullable<DateTime> modified_on { get; set; }
 
-        [Required(AllowEmptyStrings = false)]
+        public Nullable<long> deleted_by { get; set; }
+
+        [Column(TypeName = "Date")]
+        public Nullable<DateTime> deleted_on { get; set; }
+
         public Boolean is_delete { get; set; }
 
-        [Required(AllowEmptyStrings = false)]
         public long biodata_id { get; set; }
 
         [Column(TypeName = "VARCHAR")]
@@ -51,6 +48,6 @@ namespace Xsis.Model
         [StringLength(1000)]
         public string notes { get; set; }
 
-        public Boolean is_photo { get; set; }
+        public Nullable<Boolean> is_photo { get; set; }
     }
 }

@@ -14,22 +14,24 @@ namespace Xsis.Model
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public long riwayat_proyek_id { get; set; }
+        public long id { get; set; }
 
+        [Required(AllowEmptyStrings = false)]
         public long created_by { get; set; }
 
         [Column(TypeName = "Date")]
+        [Required(AllowEmptyStrings = false)]
         public DateTime created_on { get; set; }
 
-        public long modified_by { get; set; }
+        public Nullable<long> modified_by { get; set; }
 
         [Column(TypeName = "Date")]
-        public DateTime modified_on { get; set; }
+        public Nullable<DateTime> modified_on { get; set; }
 
-        public long deleted_by { get; set; }
+        public Nullable<long> deleted_by { get; set; }
 
         [Column(TypeName = "Date")]
-        public DateTime deleted_on { get; set; }
+        public Nullable<DateTime> deleted_on { get; set; }
 
         public Boolean is_delete { get; set; }
 
@@ -47,9 +49,9 @@ namespace Xsis.Model
         [StringLength(50)]
         public string project_name { get; set; }
 
-        public int project_duration { get; set; }
+        public Nullable<int> project_duration { get; set; }
 
-        public long time_period_id { get; set; }
+        public Nullable<long> time_period_id { get; set; }
 
         [Column(TypeName = "Varchar")]
         [StringLength(100)]

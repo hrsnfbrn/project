@@ -13,13 +13,10 @@ namespace Xsis.Model
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-
-        public long keahlian_id { get; set; }
-
+        public long id { get; set; }
 
         [Required(AllowEmptyStrings = false)]
         public long created_by { get; set; }
-
 
         [Column(TypeName = "Date")]
         [Required(AllowEmptyStrings = false)]

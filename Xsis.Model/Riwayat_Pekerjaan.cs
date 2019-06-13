@@ -14,22 +14,24 @@ namespace Xsis.Model
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public long riwayat_pekerjaan_id { get; set; }
+        public long id { get; set; }
 
+        [Required(AllowEmptyStrings = false)]
         public long created_by { get; set; }
 
         [Column(TypeName = "Date")]
+        [Required(AllowEmptyStrings = false)]
         public DateTime created_on { get; set; }
 
-        public long modified_by { get; set; }
+        public Nullable<long> modified_by { get; set; }
 
         [Column(TypeName = "Date")]
-        public DateTime modified_on { get; set; }
+        public Nullable<DateTime> modified_on { get; set; }
 
-        public long deleted_by { get; set; }
+        public Nullable<long> deleted_by { get; set; }
 
         [Column(TypeName = "Date")]
-        public DateTime deleted_on { get; set; }
+        public Nullable<DateTime> deleted_on { get; set; }
 
         public Boolean is_delete { get; set; }
 
@@ -45,37 +47,37 @@ namespace Xsis.Model
 
         [Column(TypeName = "Varchar")]
         [StringLength(10)]
-        public string joinYear { get; set; }
+        public string join_year { get; set; }
 
         [Column(TypeName = "Varchar")]
         [StringLength(10)]
-        public string joinMonth { get; set; }
+        public string join_month { get; set; }
 
         [Column(TypeName = "Varchar")]
         [StringLength(10)]
-        public string resignYear { get; set; }
+        public string resign_year { get; set; }
 
         [Column(TypeName = "Varchar")]
         [StringLength(10)]
-        public string resignMonth { get; set; }
+        public string resign_month { get; set; }
 
         [Column(TypeName = "Varchar")]
         [StringLength(100)]
-        public string lastPosition { get; set; }
+        public string last_position { get; set; }
 
         [Column(TypeName = "Varchar")]
         [StringLength(20)]
         public string income { get; set; }
 
-        public Boolean isitRelated { get; set; }
+        public Nullable<Boolean> is_it_related { get; set; }
 
         [Column(TypeName = "Varchar")]
         [StringLength(1000)]
-        public string aboutJob { get; set; }
+        public string about_job { get; set; }
 
         [Column(TypeName = "Varchar")]
         [StringLength(500)]
-        public string exitReason { get; set; }
+        public string exit_reason { get; set; }
 
         [Column(TypeName = "Varchar")]
         [StringLength(5000)]

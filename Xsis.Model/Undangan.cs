@@ -14,34 +14,35 @@ namespace Xsis.Model
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public long undangan_id { get; set; }
+        public long id { get; set; }
 
+        [Required(AllowEmptyStrings = false)]
         public long created_by { get; set; }
 
         [Column(TypeName = "Date")]
+        [Required(AllowEmptyStrings = false)]
         public DateTime created_on { get; set; }
 
-        public long modified_by { get; set; }
+        public Nullable<long> modified_by { get; set; }
 
         [Column(TypeName = "Date")]
-        public DateTime modified_on { get; set; }
+        public Nullable<DateTime> modified_on { get; set; }
 
-        public long deleted_by { get; set; }
+        public Nullable<long> deleted_by { get; set; }
 
         [Column(TypeName = "Date")]
-        public DateTime deleted_on { get; set; }
+        public Nullable<DateTime> deleted_on { get; set; }
 
         public Boolean is_delete { get; set; }
 
-        public long schedule_type_id { get; set; }
+        public Nullable<long> schedule_type_id { get; set; }
 
         [Column(TypeName = "Date")]
-        public DateTime invitation_date { get; set; }
+        public Nullable<DateTime> invitation_date { get; set; }
 
-        public long ro { get; set; }
+        public Nullable<long> ro { get; set; }
 
-        public long tro { get; set; }
-
+        public Nullable<long> tro { get; set; }
 
         [Column(TypeName = "Varchar")]
         [StringLength(100)]
@@ -54,8 +55,5 @@ namespace Xsis.Model
         [Column(TypeName = "Varchar")]
         [StringLength(50)]
         public string status { get; set; }
-
-
-
     }
 }

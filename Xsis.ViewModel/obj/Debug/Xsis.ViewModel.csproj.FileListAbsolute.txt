@@ -18,3 +18,13 @@ D:\Bootcamp-196\HOME\ngxsis\Xsis.ViewModel\bin\Debug\EntityFramework.SqlServer.x
 D:\Bootcamp-196\HOME\ngxsis\Xsis.ViewModel\obj\Debug\Xsis.ViewModel.csprojResolveAssemblyReference.cache
 D:\Bootcamp-196\HOME\ngxsis\Xsis.ViewModel\obj\Debug\Xsis.ViewModel.dll
 D:\Bootcamp-196\HOME\ngxsis\Xsis.ViewModel\obj\Debug\Xsis.ViewModel.pdb
+D:\Project\ngxsis\Xsis.ViewModel\bin\Debug\Xsis.ViewModel.dll.config
+D:\Project\ngxsis\Xsis.ViewModel\bin\Debug\Xsis.ViewModel.dll
+D:\Project\ngxsis\Xsis.ViewModel\bin\Debug\Xsis.ViewModel.pdb
+D:\Project\ngxsis\Xsis.ViewModel\bin\Debug\EntityFramework.dll
+D:\Project\ngxsis\Xsis.ViewModel\bin\Debug\EntityFramework.SqlServer.dll
+D:\Project\ngxsis\Xsis.ViewModel\bin\Debug\EntityFramework.xml
+D:\Project\ngxsis\Xsis.ViewModel\bin\Debug\EntityFramework.SqlServer.xml
+D:\Project\ngxsis\Xsis.ViewModel\obj\Debug\Xsis.ViewModel.csprojResolveAssemblyReference.cache
+D:\Project\ngxsis\Xsis.ViewModel\obj\Debug\Xsis.ViewModel.dll
+D:\Project\ngxsis\Xsis.ViewModel\obj\Debug\Xsis.ViewModel.pdb

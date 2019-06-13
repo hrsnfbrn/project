@@ -40,3 +40,17 @@ D:\Bootcamp-196\HOME\ngxsis\Xsis.Repo\bin\Debug\EntityFramework.SqlServer.xml
 D:\Bootcamp-196\HOME\ngxsis\Xsis.Repo\obj\Debug\Xsis.Repo.csprojResolveAssemblyReference.cache
 D:\Bootcamp-196\HOME\ngxsis\Xsis.Repo\obj\Debug\Xsis.Repo.dll
 D:\Bootcamp-196\HOME\ngxsis\Xsis.Repo\obj\Debug\Xsis.Repo.pdb
+D:\Project\ngxsis\Xsis.Repo\bin\Debug\Xsis.Repo.dll.config
+D:\Project\ngxsis\Xsis.Repo\bin\Debug\Xsis.Repo.dll
+D:\Project\ngxsis\Xsis.Repo\bin\Debug\Xsis.Repo.pdb
+D:\Project\ngxsis\Xsis.Repo\bin\Debug\EntityFramework.dll
+D:\Project\ngxsis\Xsis.Repo\bin\Debug\EntityFramework.SqlServer.dll
+D:\Project\ngxsis\Xsis.Repo\bin\Debug\Xsis.Model.dll
+D:\Project\ngxsis\Xsis.Repo\bin\Debug\Xsis.ViewModel.dll
+D:\Project\ngxsis\Xsis.Repo\bin\Debug\Xsis.Model.pdb
+D:\Project\ngxsis\Xsis.Repo\bin\Debug\Xsis.ViewModel.pdb
+D:\Project\ngxsis\Xsis.Repo\bin\Debug\EntityFramework.xml
+D:\Project\ngxsis\Xsis.Repo\bin\Debug\EntityFramework.SqlServer.xml
+D:\Project\ngxsis\Xsis.Repo\obj\Debug\Xsis.Repo.csprojResolveAssemblyReference.cache
+D:\Project\ngxsis\Xsis.Repo\obj\Debug\Xsis.Repo.dll
+D:\Project\ngxsis\Xsis.Repo\obj\Debug\Xsis.Repo.pdb

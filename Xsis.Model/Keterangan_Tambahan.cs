@@ -14,22 +14,24 @@ namespace Xsis.Model
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public long keterangan_tambahan_id { get; set; }
+        public long id { get; set; }
 
+        [Required(AllowEmptyStrings = false)]
         public long created_by { get; set; }
 
         [Column(TypeName = "Date")]
+        [Required(AllowEmptyStrings = false)]
         public DateTime created_on { get; set; }
 
-        public long modified_by { get; set; }
+        public Nullable<long> modified_by { get; set; }
 
         [Column(TypeName = "Date")]
-        public DateTime modified_on { get; set; }
+        public Nullable<DateTime> modified_on { get; set; }
 
-        public long deleted_by { get; set; }
+        public Nullable<long> deleted_by { get; set; }
 
         [Column(TypeName = "Date")]
-        public DateTime deleted_on { get; set; }
+        public Nullable<DateTime> deleted_on { get; set; }
 
         public Boolean is_delete { get; set; }
 
@@ -43,15 +45,19 @@ namespace Xsis.Model
         [StringLength(50)]
         public string emergency_contact_phone { get; set; }
 
-        public Boolean is_negotiable { get; set; }
+        [Column(TypeName = "Varchar")]
+        [StringLength(20)]
+        public string expected_salary { get; set; }
+
+        public Nullable<Boolean> is_negotiable { get; set; }
 
         [Column(TypeName = "Varchar")]
         [StringLength(10)]
         public string start_working { get; set; }
 
-        public Boolean is_ready_to_outofdown { get; set; }
+        public Nullable<Boolean> is_ready_to_outofdown { get; set; }
 
-        public Boolean is_apply_other_place { get; set; }
+        public Nullable<Boolean> is_apply_other_place { get; set; }
 
         [Column(TypeName = "Varchar")]
         [StringLength(100)]
@@ -61,7 +67,7 @@ namespace Xsis.Model
         [StringLength(100)]
         public string selection_phase { get; set; }
 
-        public Boolean is_ever_badly_sick { get; set; }
+        public Nullable<Boolean> is_ever_badly_sick { get; set; }
 
         [Column(TypeName = "Varchar")]
         [StringLength(100)]
@@ -70,6 +76,8 @@ namespace Xsis.Model
         [Column(TypeName = "Varchar")]
         [StringLength(100)]
         public string disease_time { get; set; }
+
+        public Nullable<Boolean> is_ever_psychotest { get; set; }
 
         [Column(TypeName = "Varchar")]
         [StringLength(100)]

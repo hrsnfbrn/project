@@ -13,70 +13,47 @@ namespace Xsis.Model
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-
-        public long online_test_id { get; set; }
-
+        public long id { get; set; }
 
         [Required(AllowEmptyStrings = false)]
         public long created_by { get; set; }
-
 
         [Column(TypeName = "Date")]
         [Required(AllowEmptyStrings = false)]
         public DateTime created_on { get; set; }
 
-
-        [Required(AllowEmptyStrings = true)]
-        public long modified_by { get; set; }
-
+        public Nullable<long> modified_by { get; set; }
 
         [Column(TypeName = "Date")]
-        [Required(AllowEmptyStrings = true)]
-        public DateTime modified_on { get; set; }
+        public Nullable<DateTime> modified_on { get; set; }
 
-
-        [Required(AllowEmptyStrings = true)]
-        public long deleted_by { get; set; }
-
+        public Nullable<long> deleted_by { get; set; }
 
         [Column(TypeName = "Date")]
-        [Required(AllowEmptyStrings = true)]
-        public DateTime deleted_on { get; set; }
-
+        public Nullable<DateTime> deleted_on { get; set; }
 
         public Boolean is_delete { get; set; }
 
         public long biodata_id { get; set; }
 
-        [Column(TypeName = "VARCHAR")]
+        [Column(TypeName = "Varchar")]
         [StringLength(50)]
-        [Required(AllowEmptyStrings = true)]
         public string period_code { get; set; }
 
-
-        [Required(AllowEmptyStrings = true)]
-        public int period { get; set; }
-
+        public Nullable<int> period { get; set; }
 
         [Column(TypeName = "Date")]
-        [Required(AllowEmptyStrings = true)]
-        public DateTime test_date { get; set; }
-
+        public Nullable<DateTime> test_date { get; set; }
 
         [Column(TypeName = "Date")]
-        [Required(AllowEmptyStrings = true)]
-        public DateTime expired_test { get; set; }
+        public Nullable<DateTime> expired_test { get; set; }
 
-
-        [Column(TypeName = "VARCHAR")]
+        [Column(TypeName = "Varchar")]
         [StringLength(10)]
-        [Required(AllowEmptyStrings = true)]
         public string user_access { get; set; }
 
-
-        [Column(TypeName = "VARCHAR")]
+        [Column(TypeName = "Varchar")]
         [StringLength(50)]
-        [Required(AllowEmptyStrings = true)]
         public string status { get; set; }
     }
 }

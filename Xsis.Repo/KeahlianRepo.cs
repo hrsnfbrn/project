@@ -59,7 +59,7 @@ namespace Xsis.Repo
             Keahlian keahlian = new Keahlian();
             using (DataContext db = new DataContext())
             {
-                keahlian = db.Keahlian.Where(d => d.keahlian_id == ID).First();
+                keahlian = db.Keahlian.Where(d => d.id == ID).First();
                 return keahlian;
             }
         }
@@ -71,7 +71,7 @@ namespace Xsis.Repo
                 Keahlian dep;
                 using (DataContext db = new DataContext())
                 {
-                    dep = db.Keahlian.Where(d => d.keahlian_id == ID).First();
+                    dep = db.Keahlian.Where(d => d.id == ID).First();
                     dep.is_delete = true;
                     db.Entry(dep).State = System.Data.Entity.EntityState.Modified;
                     db.SaveChanges();
